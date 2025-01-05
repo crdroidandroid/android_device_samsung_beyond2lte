@@ -30,27 +30,24 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
-## Inherit some common Elixir stuff
+## Inherit some common crDroid stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Elixir Flags
-WITH_GMS := true
-ELIXIR_BUILD_TYPE := OFFICIAL
-BUILD_USERNAME := FrEeRuNnEr4EvEr
-BUILD_HOSTNAME := Elixir
-
-# Additional Flags
+#crDroid flags
 IS_PHONE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_INCLUDE_STOCK_ACORE := false
-
-TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-EXTRA_UDFPS_ANIMATIONS := true
-
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BUILD_APERTURE_CAMERA := true
 FORCE_LAWNCHAIR := true
+BUILD_USERNAME := PX-0
+BUILD_HOSTNAME := crDroid
+TARGET_INCLUDE_STOCK_ACORE := false
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_SUPPORTS_BLUR := true
+TARGET_HAS_UDFPS := true
 
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1440
